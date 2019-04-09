@@ -1,0 +1,39 @@
+										@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+										@@@ About Git and GitHub @@@
+										@@ Version Control System @@
+										@@@@@@@@@@ VCS @@@@@@@@@@@@@
+										@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+	repository = depozit/magazie
+	branch = ramura/ramificatie
+	remote = la distanta (*internet)
+
+					~~~ Concepte Git~~~
+
+	~~ Tine evidenta codului scris
+	~~ Practic face un "Printscreen la cod" (Snapshot)
+	~~ Un snapshot il faci creand un commit
+	~~ Poti orcand accesa orice snapshot
+
+					^^^ Basic Commands ^^^
+
+	^^ git init 			= initializeaza depozitul git local
+	^^ git add <files> 		= adauga file intr-o zona intermediara
+	^^ git status 			= afiseaza filele din zona intermediara (*si cele care sunt deja in depozit)
+	^^ git commit 			= muta filele din zona intermediara in depozitul local
+		^^ git branch 		= creaza un alt depozit local separat de cel principal
+		^^ git checkout 	= comuta intre ramuri
+		^^ git merge 		= adauga modificarile din alt depozit local in cel curent
+
+		^^ git remote add origin adresa.git (conectare la github, se asociaza la origin o adresa github)
+		^^ git remote -u origin master (adauga proiectul online (ramura master) la adresa asociata lui origin)
+	^^ git push 			= muta filele din depozitul local (cele noi/modificate) in depozitul "online"
+		^^ git push -u origin branch_name
+	^^ git pull 			= adauga modificarile facute de altcineva la proiect in depozitul tau local
+	^^ git clone 			= descarca proiect in directorul curent
+
+
+
+
+	.gitignore --> fisier unde sunt enumerate directoarele/filele care sa nu fie adaugate prin git add .
